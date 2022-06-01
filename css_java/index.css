@@ -8,7 +8,7 @@ body
 {
     font-family: sans-serif;
     padding: 90px 20px 0;
-    background: url(/Users/GEORGE/Desktop/SENA/MANUAL/img/fondo3.gif);
+    background: url(/img/fondo3.gif);
 }
 div#general
 {
@@ -29,7 +29,7 @@ div#general
 {
     width: 300px;/*500 tamaño original*/
     height: 258px;/*430 tamaño original*/
-    background: url(/Users/GEORGE/Desktop/SENA/MANUAL/img/programacion2.gif) center/100% 100%;
+    background: url(/img/programacion2.gif) center/100% 100%;
     margin-bottom: 20px;
     margin-left: 27px;
     display: inline-block; 
@@ -38,7 +38,7 @@ div#general
 {
     width: 350px;/*800 tamaño original*/
     height: 258px;/*600 tamaño original*/
-    background: url(/Users/GEORGE/Desktop/SENA/MANUAL/img/programacion.gif) center/100% 100%;
+    background: url(/img/programacion.gif) center/100% 100%;
     margin-bottom: 20px;
     display: inline-block;
 }
@@ -46,7 +46,7 @@ div#general
 {
     width: 400px;/*540 tamaño original*/
     height: 258px;/*303 tamaño original*/
-    background: url(/Users/GEORGE/Desktop/SENA/MANUAL/img/pc.gif) center/100% 100%;
+    background: url(/img/pc.gif) center/100% 100%;
     margin-bottom: 20px;
     display: inline-block; 
 }
@@ -55,7 +55,7 @@ div#general
     height: 6.5%;
     width: 9.5%;
     margin: 2% 0 0 45%;
-    background: url(/Users/GEORGE/Desktop/SENA/MANUAL/img/js.png) center/100% 100%;
+    background: url(/img/js.png) center/100% 100%;
 }
 img
 {
@@ -89,7 +89,7 @@ img
 .logo
 {
     height: 80px;
-    background: url(/Users/GEORGE/Desktop/SENA/MANUAL/img/iconops.jpg);
+    background: url(/img/iconops.jpg);
     padding: 0 40px;
     line-height: 80px;
     list-style: none;
