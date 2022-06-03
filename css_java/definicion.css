@@ -89,7 +89,7 @@ img
 .logo
 {
     height: 80px;
-    background: url(/img/iconops.jpg);
+    background: url(/img/iconod.jpg);
     padding: 0 40px;
     line-height: 80px;
     list-style: none;
@@ -135,7 +135,7 @@ img
 }*/ 
 .nav-menu-link:hover
 {
-    background-color: rgba(0, 170, 182, 0.938); 
+    background-color: #D3B15E; 
     transition: 0.5s;
 }
 .nav-menu
@@ -182,5 +182,5 @@ p
 }
 .a:hover
 {
-    background-color: #2d9ec7;
+    background-color: #FFE69A;
 }
