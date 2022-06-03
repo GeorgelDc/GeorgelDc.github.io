@@ -135,7 +135,7 @@ img
 }*/ 
 .nav-menu-link:hover
 {
-    background-color: #D3B15E; 
+    background-color: #998144; 
     transition: 0.5s;
 }
 .nav-menu
@@ -182,5 +182,5 @@ p
 }
 .a:hover
 {
-    background-color: #FFE69A;
+    background-color: #D3B15E;
 }
