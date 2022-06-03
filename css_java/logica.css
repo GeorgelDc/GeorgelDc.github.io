@@ -135,7 +135,7 @@ img
 }*/ 
 .nav-menu-link:hover
 {
-    background-color: rgba(0, 170, 182, 0.938); 
+    background-color: #008b66; 
     transition: 0.5s;
 }
 .nav-menu
