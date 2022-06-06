@@ -8,7 +8,7 @@ body
 {
     font-family: sans-serif;
     padding: 90px 20px 0;
-    background: url(/img/fondo3.gif);
+    background: url(/img/proyecto.jpg);
 }
 div#general
 {
@@ -50,13 +50,6 @@ div#general
     margin-bottom: 20px;
     display: inline-block; 
 }
-#logojs
-{
-    height: 6.5%;
-    width: 9.5%;
-    margin: 2% 0 0 45%;
-    background: url(/img/js.png) center/100% 100%;
-}
 img
 {
     width: 600px;
@@ -66,7 +59,7 @@ img
 }
 .header
 {
-    background-color: #293462;
+    background-color: #b63434;
     height: 80px;
     position: fixed;
     width: 100%;
@@ -135,7 +128,7 @@ img
 }*/ 
 .nav-menu-link:hover
 {
-    background-color: rgba(0, 170, 182, 0.938); 
+    background-color: #FF4949; 
     transition: 0.5s;
 }
 .nav-menu
@@ -182,5 +175,5 @@ p
 }
 .a:hover
 {
-    background-color: #2d9ec7;
+    background-color: #FF4949;
 }
