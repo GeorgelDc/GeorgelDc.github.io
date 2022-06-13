@@ -24,5 +24,67 @@
         </nav>
     </header>
     <br>
+        <h1>Manejadores de Eventos</h1>
+    <p>Uno de los manejadores más básicos es OnClick que inicializa un script, como su propio nombre indica, cuando el usuario hace clic en un link de la ventana del browser. Todos los demás manejadores funcionan de la misma manera: evalúan la acción de un usuario y entonces llaman a un script que ejecuta el código.En este apartado vamos a ver manejadores de eventos de:</p>
+    <ul>
+        <li>Link</li>
+        <li>Boton</li>
+        <li>Ventana</li>
+    </ul>
+    <!--AQUI VA UN LISTADO ORDENADO-->
+    <p>Hay que recordar que los casos a tratar suelen ser visibles con browsers como Internet Explorer 3.0 en adelante y Netscape Navigator 2.0 en adelante, aunque algunos necesitan versiones posteriores. Puede ocurrir que algunos de los ejemplos produzcan errores con MicroSoft Internet Explorer dado que MicroSoft ha desarrollado su propio lenguaje para estos menesteres llamado JScript y que, por supuesto, contiene algunas diferencias con el JavaScript desarrollado por Netscape.
+        Vamos a ir aprendiendo el uso de estos manejadores a través de ejemplos explicados.</p>
+    <h3><em>1. Mensajes de Alerta - Manejador OnClick</em></h3>
+    <p>El manejador OnClick, como ya se ha dicho anteriormente, es uno de los componentes más básicos y usados de JavaScript. El siguiente ejemplo utiliza este manejador para generar un mensaje de alerta en el browser.Los mensajes de alerta son utilizados para muy variados propósitos pero básicamente se usan para informar al usuario de algo a través de un cuadro de diálogo que aparece tras la acción del usuario.</p>
+    <!--AQUI VA UNA IMAGEN DE CODIGO-->
+    <!--AQUI VA UN LINK HACIA EL EJECUTABLE DEL CODIGO-->
+    <p>Como se puede ver insertamos el código de script en la cabecera del documento, definiendo una función, boton(), que contiene el método alert().Este código se ejecuta cuando el usuario hace clic sobre el link menú que antes de llevarle a la página MENU.HTM muestra el mensaje incluido con el método alert().</p>
+    <h3><em>2.Botón de Navegación - Manejador OnClick, método go(), objeto history</em></h3>
+    <p>Este ejemplo utiliza el método onClick para inicializar el método go(), perteneciente al objeto history que permite la navegación hacia delante y hacia atrás sobre el historial de un URL. El código de este ejemplo es el siguiente:</p>
+    <!--AQUI VA UNA IMAGEN DE CODIGO-->
+    <!--AQUI VA UN LINK HACIA EL EJECUTABLE DEL CODIGO-->
+    <p>Pasemos a analizar el código. Definimos la función nav(x) que, a través de la variable x, da el número de saltos en páginas que el browser debe implementar. En este mismo ejemplo vamos a ver dos formas de hacer lo mismo. El método history.go(x) toma un valor entero x que en la primera parte del código es 1 ó -1</p>
+    <!--AQUI VA UNA IMAGEN DE CODIGO-->
+    <p>y carga el URL correspondiente al número adelante o atrás especificado en el historial de navegación de la sesión en curso. Este método toma el valor de la función nav(x), que es llamada al hacer clic en los botones definidos en el formulario. La segunda forma de hacer el mismo proceso, dando a la vez más libertad al desarrollador dado que permite diseñar el propio botón como un .GIF o como es el caso que nos ocupa, con texto, lo vemos en la línea</p>
+    <!--AQUI VA UNA IMAGEN DE CODIGO-->
+    <p>en donde podemos ver cómo implementar un anclaje de JavaScript.</p>
+    <h3><em>3.Botón de E-mail</em></h3>
+    <p>Este ejemplo abre la ventana de correo electrónico para mandar un mensaje a la dirección especificada. Veamos primero el código:</p>
+    <!--AQUI VA UNA IMAGEN DE CODIGO-->
+    <!--AQUI VA UN LINK HACIA EL EJECUTABLE DEL CODIGO-->
+    <p>En este ejemplo no definimos una función y directamente a través del manejador OnClick invocamos una propiedad, self, del objeto window. Ni que decir tiene que podemos sustituir la línea 'mailto:webmaster@cal.upco.es' por cualquier otro URL.</p>
+    <h3><em>4.Barra de Estado con Mensaje</em></h3>
+    <p>Con este ejemplo vamos a introducir un nuevo manejador:onMouseOver.¿Cuándo se "dispara" este manejador?: pues como su propio nombre indica al pasar el ratón por encima del elemento que tiene la llamada del manejador, es decir, al reconocer la presencia del ratón sobre el área de texto o imagen, lo que produce un mensaje predefinido que aparece en la barra de estado de la ventana del browser.
+        Tenemos dos tipos de links que cumplen el mismo propósito de generar un mensaje en la barra de estado: el enlace de texto,</p>
+    <!--AQUI VA UNA IMAGEN DE CODIGO-->
+    <p>y el enlace de imagen,</p>
+    <!--AQUI VA UNA IMAGEN DE CODIGO-->
+    <p>De estas dos maneras conseguimos distintos mensajes sin necesidad de hacer efectivos los links. Este ejemplo también introduce una nueva propiedad del objeto window:status.Lo que hace es mostrar el texto asignado en la barra de estado (extremo inferior izquierdo) de la ventana del documento. El script debe contener la instrucción return true dentro del manejador de eventos onMouseOver para un correcto funcionamiento.</p>
+    <h3><em>5.Mensaje de Alerta con Manejador onMouseOver</em></h3>
+    <p>Este ejemplo es una simple combinación de dos de los anteriores para aunar conceptos: nos encontramos con una ventana de alerta al pasar el ratón por un área determinada. Podemos ver el código, que no necesita explicación adicional:
+    </p>
+    <!--AQUI VA UNA IMAGEN DE CODIGO-->
+    <h3><em>6.Mensaje de Alerta con Manejador onMouseOut</em></h3>
+    <p>En este ejemplo introducimos el último manejador de link:onMouseOut. Lo que hace este manejador es esperar a que el ratón abandone el área predefinida como link para disparar el mensaje de alerta. Resumiendo, para que se ejecute el script el ratón debe entrar y salir del área de link. Se podría utilizar este manejador para implementar juegos o en páginas donde es necesario que el usuario haga clic en una zona determinada (imagen, por ejemplo) para desencadenar una serie de acciones.Veamos cómo sería el código:</p>
+    <!--AQUI VA UNA IMAGEN DE CODIGO-->
+    <h3><em>7.Ejemplo de un Juego on line</em></h3>
+    <p>Este ejemplo es un simple juego de preguntas y respuestas cuyo código no puede ser a estas alturas más simple. Combina el manejador onClick, con el método alert() y con etiquetas INPUT de botón. La ventaja de este ejemplo es que toda la funcionalidad del mismo reside en el cliente, cuando anteriormente se debía recurrir a un CGI para conseguir el mismo resultado. Como innovación se utiliza la propiedad checked aplicable a los objetos tipo button de un formulario, y que obviamente marcan la elección hecha. Veamos el código:</p>
+    <!--AQUI VA UNA IMAGEN DE CODIGO-->
+    <!--AQUI VA UN LINK HACIA EL EJECUTABLE DEL CODIGO-->
+    <h3><em>8.Eventos de Ventana</em></h3>
+    <p>A continuación vamos a ver los eventos de ventana. Un evento de ventana puede ser definido como un evento disparado por alguna actividad relacionada con la ventana del browser como por ejemplo la carga o descarga de un documento, manejadores onLoad y onUnload, o la obtención o pérdida del foco, esto se refiere a que una ventana dentro de un grupo de ellas esté activa sobre las demás, manejadores onFocus y onBlur. Este tipo de eventos no sólo se aplica a ventanas completas sino también a frames, subventanas o marcos, dentro de ellas. Por ello las etiquetas HTML sobre los que irán estos manejadores serán &lt;BODY&gt;, para la ventana completa, y/o &lt;FRAMESET&gt;, para los frames.
+        A partir de la versión 3.0 de Netscape se introdujeron dos nuevos métodos a los objetos ventana y frame: blur() y focus(). De ellos surgieron los dos últimos manejadores de eventos anteriormente mencionados. En la práctica no son usados aunque sí se utilizan los métodos para dar y quitar el foco a una ventana o frame en ciertos momentos.
+        Veamos un ejemplo para obtener la hora exacta del sistema:</p>
+    <!--AQUI VA UNA IMAGEN DE CODIGO-->
+    <p>Con esto obtenemos en un formulario con una caja de texto la fecha y la hora del sistema. Para ello hemos definido en la cabecera del documento la función horario( ). En la variable hoy almacenamos el resultado de aplicar el método new date(). El método toString( ) convierte el valor de dicha variable en una cadena cuyo valor asigna al valor del primer elemento del formulario del documento, ventana, sobre el que estamos.El argumento 1000 representa 1000 milisegundos ó 1 segundo y es el tiempo que tarda en actualizar el valor de la fecha de la ventana a través del método setTimeout(), creando así la ilusión de un reloj digital.La llamada al script se realiza a través del manejador onLoad en la etiqueta del cuerpo del documento.</p>
+    <p>Veamos ahora un ejemplo que permite al usuario confirmar si desea cargar una página al comienzo del proceso.</p>
+    <!--AQUI VA UNA IMAGEN DE CODIGO-->
+    <p>La explicación es bastante sencilla. Definimos la función confirma(), que se invoca mediante el manejador onLoad en la carga de la página. Esta función controla mediante una sentencia de control if si el usuario ha pulsado "aceptar" o "cancelar".¿Que cómo?. En la línea</p>
+    <!--AQUI VA UNA IMAGEN DE CODIGO-->
+    <p>donde lo que está preguntando es si ha pulsado "cancelar" (el operador ! indica negación). En caso afirmativo atrasa en una página la navegación del browser a través de la línea</p>
+    <!--AQUI VA UNA IMAGEN DE CODIGO-->
+    <p>Por último vamos a ver el código de JavaScript que más a menudo se ve por el WWW. Una vez que una página está cargada, empieza a desplazarse de derecha a izquierda de la barra de estado de la ventana del browser una serie de textos. Veamos el código y lo comentamos:</p>
+    <!--AQUI VA UNA IMAGEN DE CODIGO-->
+    <p>Este ejemplo utiliza la propiedad status del objeto window. Manipulando la longitud del mensaje y añadiendo un retraso, a través de la variable delay, usando el método setTimeout obtenemos el efecto descrito. También son novedad en este ejemplo el método subString() y la propiedad length. El método subString() muestra una parte de una cadena de caracteres. Usa dos argumentos: el primero determina dónde comienza la subcadena a mostrar y el segundo dónde acaba. La propiedad length indica el número de elementos en un array, en nuestro caso la longitud del mensaje.</p>
 </body>
 </html>
